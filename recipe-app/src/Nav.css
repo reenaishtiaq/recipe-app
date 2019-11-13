@@ -1,0 +1,30 @@
+.nav_bar{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #d91e48;
+    padding: 15px;
+
+}
+.nav_bar  ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.nav_bar ul li{
+    display: inline;
+    font-size: 14px;
+    padding-right: 28px;  
+}
+a{
+    margin: 20px;
+    
+    color: #f8f9fa !important;
+    font-size: 18px;
+}
+.app_name{
+    background-color: #d91e48;
+    padding: 20px;
+    margin: 10px 0px 10px 0px;
+    color: white;
+}

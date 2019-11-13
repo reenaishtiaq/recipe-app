@@ -3,7 +3,7 @@ import Nav from './components/Nav';
 import Form from './components/Form';
 import Recipes from './components/Recipes';
 import './Nav.css';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 // const APP_ID = "3005204b";
@@ -18,7 +18,6 @@ const API_KEY = '731dd367ca87f8649a564f647a99554d'; // this key is used
 // https://www.food2fork.com/api/search?key={API_KEY}&q=shredded%20chicken&count=5
 
 class App extends Component {
-
 
 
   state = {
@@ -41,34 +40,16 @@ class App extends Component {
 
   };
 
-  componentDidMount = () => {
-    const json = localStorage.getItem('recipes');
-    if (json === null) {
-      return;
-    }
-    const recipes = JSON.parse(json);
-    this.setState({ recipes });
-  };
-
-  componentDidUpdate = () => {
-    const recipes = JSON.stringify(this.state.recipes);
-    localStorage.setItem("recipes", recipes);
-  };
-
   render() {
     return (
       <div className="App">
 
         <Nav />
-        <h1> Recipe App </h1>
+        
 
         <Form getRecipe={this.getRecipe} />
-        {/* <Recipes recipes={this.state.recipes} /> */}
-        {/* {this.state.recipes.map((recipe) => {
-          return <p>{recipe.title}</p>
-        }
-          
-          )} */}
+        <Recipes recipes= {this.state.recipes} />
+         
 
 
 
