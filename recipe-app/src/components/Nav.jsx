@@ -1,5 +1,7 @@
 
-import React, { Component } from 'react';
+import React from 'react';
+
+
 
 export default function Nav(props) {
 
@@ -7,20 +9,20 @@ export default function Nav(props) {
         <>
             <header>
                 <nav className="nav_bar">
-                
+
+
                     <ul className="list-container">
 
-                        <a className="link" href="google.com"><i className="fas fa-home"></i> Home</a>
-                        <a className="link" href="google.com"><i className="fas fa-check-circle"></i> All Recipes </a>
-                        <a className="link" href="google.com"><i className="fas fa-thumbs-up"></i> Our Chefs </a>
-                        <a className="link" href="google.com" target="_blank"><i className="fas fa-users"></i> Contact Us</a>
+                        <a className="link" href="http://localhost:3000/"> Home</a>
+                        <a className="link" href="https://github.com/reenaishtiaq"> Follow me </a>
+                        <a className="link" href="https://github.com/reenaishtiaq/recipe-app"> Like Repo </a>
 
                     </ul>
 
                 </nav>
 
                 <div className="app_name">
-                    
+
                     <h1>Recipe App</h1>
 
                 </div>

@@ -16,13 +16,14 @@
     font-size: 14px;
     padding-right: 28px;  
 }
-a{
+.link{
     margin: 20px;
-    
-    color: #f8f9fa !important;
+    color: #f8f9fa;
     font-size: 18px;
 }
 .app_name{
+    font-family: 'Lobster', cursive;
+    font-weight: bolder;
     background-color: #d91e48;
     padding: 20px;
     margin: 10px 0px 10px 0px;
